@@ -132,5 +132,8 @@
   });
 
   const showAllButton = document.querySelector(`.show-all`)
-  if(showAllButton) showAllButton.addEventListener("click", showAll);
+  if(showAllButton) showAllButton.addEventListener("click", () => {
+    document.getElementById('menu_type').innerText = 'All';
+    showAll();
+  });
 </script>
