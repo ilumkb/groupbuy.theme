@@ -85,7 +85,6 @@
   const allTypes = ["all",  {{ range .Site.Sections }}"{{lower .Title}}",{{ end }}];
   const filter = (event, type) => {
     const isActive = event.target.classList.contains("active");
-
     showAll();
     if (!isActive) {
       hideAll();
@@ -101,6 +100,7 @@
           )
           .forEach((item) => item.classList.remove("hide"));
       }
+      document.getElementById('menu_type').innerText = type;
     }
   };
 
