@@ -1,2 +1,0 @@
-# groupbuy.theme
-groupbuy.theme
